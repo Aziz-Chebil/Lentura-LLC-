@@ -1,0 +1,645 @@
+.demo {
+    padding: 60px 0;
+    border: 2px solid #5c34eb;
+    background-color: orange;
+
+ }
+
+
+
+button{
+    display: block;
+    margin : 20px;
+    padding : 8px;
+}
+
+.foot button{
+    display : inline-block;
+    margin: 20px;
+    padding : 8px;
+}
+
+.headContainer {
+    margin:1em;
+    width: 500px;
+    border-radius: .5em;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    height:150px;
+}
+.headContainer img{
+    margin-right: 300px;
+    margin-top: 5px;
+}
+.headContainer button{
+    margin-bottom: 60px;
+    height:50px;
+    
+}
+#currency-selector{
+    margin-left:850px;
+}
+.dot{
+    height:25px;
+    width:25px;
+    background-color: #175c4c;
+    border-radius: 50%;
+    display:inline-block;
+    margin-left : 150px;
+    margin-top: 14px;
+    
+}
+.item{
+    width: 500px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    height:50px;
+}
+.item p{
+    margin-right:200px;
+}
+
+#back{
+  width: 55px;
+  height: 32px;
+}
+
+/* Below is the CSS code for the Language Feature*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+a {
+    text-decoration: none;
+ }
+* {
+    box-sizing : border-box;
+}
+
+nav {
+    width:960px;
+    margin : 0 auto;
+    display : flex;
+    justify-content: space-between;
+
+}
+
+.lang-menu{
+    margin-top: 35px;
+    position :relative;
+}
+
+.selected-lang{
+    cursor : pointer;
+    display : flex;
+    justify-content: space-between;
+    line-height: 1;
+    width:100px;
+}
+.selected-lang:before{
+    content : '';
+    display: block;
+    width : 25px;
+    height: 18px;
+    background-image: url("file:///C:/Users/MSI/Downloads/us%20(1).svg");
+}
+
+.lang-menu ul{
+    margin : 0;
+    padding : 0;
+    background-color:#fff;
+    border: 1px solid #f8f8f8;
+    box-shadow : 0px 1px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display:none;
+    position : absolute;
+    top : 40px;
+    left : 0;
+}
+
+.lang-menu ul li{
+    list-style : none;  
+    display : flex;
+    justify-content: space-between;
+}
+.lang-menu ul li a{
+    width : 125px;
+    display : block;
+    padding: 8px 10px;
+}
+.lang-menu ul li a:before{
+    content : '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width : 25px;
+    height: 18px;
+}
+.lang-menu ul li a:hover{
+    background-color: #f2f2f2;
+}
+
+.fr:before {
+    background-image: url("file:///C:/Users/MSI/Downloads/fr.svg");
+}
+.en:before{
+    background-image: url("file:///C:/Users/MSI/Downloads/us%20(1).svg");
+}
+.de:before{
+    background-image:url("file:///C:/Users/MSI/Downloads/de.svg");
+}
+.ch:before{
+    background-image: url("file:///C:/Users/MSI/Downloads/cn.svg");
+}
+
+
+.lang-menu:hover ul{
+    display:block;
+
+}
+select{
+    height: 50px;
+    display: flex;
+    margin-top: 37px;
+}
+
+.logo {
+    width: 250px;
+    margin: 0 auto;
+    margin-top: -170px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.small-box {
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.box p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin-top: -15px;
+}
+
+.box p.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.navigation {
+    list-style-type: none;
+    text-align: right;
+    padding-right: 100px;
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-right: 20px;
+    padding-top: 30px;
+    font-size: 24px;
+    letter-spacing: 1.25px;
+}
+
+.navigation li a {
+    text-decoration: underline;
+    color: inherit;
+    outline: none;
+}
+
+.navigation li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    .small-box {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        position: static;
+        transform: none;
+        display: block;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        width: 150px;
+        margin-top: -100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .small-box {
+        width: 90vw;
+        height: auto;
+        padding: 10px;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .box {
+        width: calc(100vw - 20px);
+        margin-bottom: 10px;
+    }
+}
+
+.small-box {
+    overflow-x: hidden;
+}
+
+/* Popup Styles */
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.popup {
+    width: 400px;
+    min-height: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+.popup-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popup-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.popup-input input {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-right: 5px; 
+}
+
+.popup-input span {
+    margin: 0 5px;
+}
+
+.popup-rooms {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.popup-rooms {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.room {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    position: relative; 
+}
+
+.room-size-box {
+    width: 121px;
+    height: 90px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    width: 121px; /* Adjust the width as needed */
+    height: 140px; /* Adjust the height as needed */
+        /* Add any other desired styles */
+}
+    
+
+
+.room-size-label {
+    position: absolute;
+    top: 5px;
+    left: 22px;
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+    text-align: left;
+}
+
+
+
+.popup-rooms.show {
+    display: flex;
+}
+
+.room-size {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* Code 2 CSS */
+
+button {
+    display: block;
+    margin: 20px;
+    padding: 8px;
+}
+
+.headContainer {
+    width: 500px;
+    border-radius: .5em;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+.buttons button{
+    margin-bottom:20px;
+}
+.foot {
+    margin-top: 170px;
+    display: flex;
+    justify-content: space-between;
+    width:1500px;
+}
+.foot button {
+    display: inline-block;
+    margin: 20px;
+    padding: 8px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.footer {
+    width: 300px;
+    height: 400px;
+    border: 3px solid grey; 
+    border-radius: 3px;
+    margin: 0 10px; 
+    margin-top: 500px;
+    
+}
+
+.footer:first-child {
+    margin-left: 0; 
+}
+
+.footer:last-child {
+    margin-right: 0; 
+}
+
+.footer-list {
+    list-style-type: none;
+    margin: 45px 0;
+    padding: 0;
+    text-align: left;
+    margin-left: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-list li {
+    margin-bottom: 25px;
+    list-style: none; 
+    
+}
+
+.footer-list li a {
+    text-decoration: none;
+}
+
+.footer-title {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-left: 10px; 
+    font-family: "Inter", sans-serif;
+}
+
+/* Add the CSS code for the toggle switches here */
+/* Add the CSS code for the toggle switches here */
+.switch {
+    position: relative;
+    display: inline-flex; /* Use inline-flex to keep the switch inline */
+    align-items: center; /* Center the switch vertically */
+    font-size: 14px; /* Adjust the font size as needed */
+    padding: 2px; /* Adjust the padding as needed */
+    border-radius: 8px; /* Adjust the border-radius to make it rounder */
+    overflow: hidden; /* Clip the content within the container */
+    margin-right: 70px;
+    margin-top: 13px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider {
+    position: relative;
+    cursor: pointer;
+    width: 36px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    background-color: #ccc;
+    -webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+    border-radius: 10px; /* Adjust the border-radius to make it rounder */
+    margin-left: -1px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; /* Adjust the height as needed */
+    width: 16px; /* Adjust the width as needed */
+    left: 2px; /* Adjust the left position as needed */
+    bottom: 2px; /* Adjust the bottom position as needed */
+    background-color: white;
+    -webkit-transition: transform 0.4s;
+    transition: transform 0.4s;
+    border-radius: 50%; /* Adjust the border-radius to make it rounder */
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+
+
+
+.room-size-label {
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    
+}
+
+.room-furnished-label {
+    font-size: 12.5px;
+    margin-top: -8px;
+    color: black;
+    position: absolute; /* Change to absolute positioning */
+    top: 53px; /* Align vertically in the middle */
+    transform: translateY(-10%); /* Adjust vertical alignment */
+    transform: translateX(35%); /* Adjust vertical alignment */
+}
+
+.room-text {
+    font-size: 14px; /* Adjust the font size as needed */
+    color: black;
+    position: relative; /* Set position to relative */
+    top: 10px; /* Adjust the top value to increase the vertical distance */
+    margin-left: 10px;
+}
+
+.room-button {
+    width: 15px;
+    height: 15px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 17px;
+    margin-left: 7px;
+}
+
+.room-button.active {
+    background-color: turquoise;
+}
+
+.room-counter input {
+    width: 30px; /* Adjust the width as needed */
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield;
+}
+
+.room-counter input::-webkit-inner-spin-button,
+.room-counter input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.room-counter {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.room-counter button {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.room-counter button.minus {
+    margin-right: 5px;
+}
+
+.room-counter button.plus {
+    
+    margin-left: 5px;
+
+}
+.room-counter {
+    display: flex;
+    align-items: center;
+}
+
+.counter-button {
+    margin-right: 5px;
+}
+
+.counter-input {
+    margin: 0 44px;
+}
+
+
